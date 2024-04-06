@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To go Healthy Meals</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="navbar">
+  <h2>To go Healthy Meals</h2>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="profile.html">Profile</a></li>
+
+  </ul>
+    <a href="cart.html">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+</div>    
+    
+    <div class="container3">
+        <h1>Contact Customer Support</h1>
+        <form action="submit_support_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+    <script src="src/Data.js"></script>
+    <script src="src/main.js"></script>
+</html>

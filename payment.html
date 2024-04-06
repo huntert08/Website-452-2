@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To go Healthy Meals</title>
+  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="navbar">
+  <h2>To go Healthy Meals</h2>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+    <a href="cart.html">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+</div>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <!-- Your navigation and other content -->
+<div class="payment">
+    <section class="payment-details">
+        <div id="cartItems">  
+        </div> <!-- Cart items will be populated here -->
+        <br><h3>Total Amount: <span id="totalAmount">$0.00</span></h3> <!-- Total amount -->
+    </section>
+
+    <section class="payment-form">
+        <h2>Payment Information</h2>
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="cardHolderName">Card Holder Name:</label>
+                <input type="text" id="cardHolderName" name="cardHolderName" required>
+            </div>
+            <input type="radio">Pick Up  </input>
+            <input type="radio">Delivery</input>
+            <br><br><button type="submit">Submit Payment</button>
+        </form>
+    </section>
+</div>
+
+    <!-- Your footer and other content -->
+
+    <script src="cart.js" defer></script> <!-- Include your cart JavaScript file -->
+    <script src="payment.js" defer></script> <!-- Include the payment.js script -->
+    <script src="data.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+</html>
